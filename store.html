@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/dba8d7be4d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="store.css">
+    <title>PS Store</title>
+</head>
+<body>
+    <div class="wrapper">
+        <i class="fab fa-playstation fa-4x" id="logo"></i>
+
+        <div class="side">
+        <div class="player">
+            <img src="/img/user.png" id="user">
+            <h1 id="username">DTLSC</h1>
+        </div>
+            <ul class="list">
+                <li><a href="/index.html">Dashboard</a></li>
+                <li><a href="/store.html">Store</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+
+        <div class="power">
+            <i class="fas fa-power-off"></i>
+            <div class="logout">Log Out</div>
+        </div>
+
+        <div class="search">
+            <form>
+                <i class="fas fa-search fa-2x"></i>
+                <input type="text" placeholder="What are you looking for?" id="searchQuery">
+            </form>
+        </div>
+
+        <div class="navigation">
+            <ul id="nav">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Indie</a></li>
+                <li><a href="#">Multiplayer</a></li>
+                <li><a href="#">Racing</a></li>
+                <li><a href="#">RPG</a></li>
+                <li><a href="#">Simulation</a></li>
+                <li><a href="#">Strategy</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">VR</a></li>
+            </ul>
+        </div>
+
+        <h1 id="high">Highlights</h1>
+
+        <div class="highlights">
+            
+            <div class="featured" id="apex">
+                <div class="attribute">
+                    Featured
+                </div>
+                <div class="footer">
+                    <h6 class="gameName">Apex Legends</h6>
+                    <p class="price">Free</p>
+                </div>
+            </div>
+
+            <div class="featured" id="mw">
+                <div class="attribute">
+                    Featured
+                </div>
+                <div class="footer">
+                    <h6 class="gameName">Modern Warfare</h6>
+                    <p class="price">$59.99</p>
+                </div>
+            </div>
+
+            <div class="featured" id="gta5">
+                <div class="attribute">
+                    Featured
+                </div>
+                <div class="footer">
+                    <h6 class="gameName">Grand Theft Auto 5</h6>
+                    <p class="price">$29.99</p>
+                </div>
+            </div>
+        </div>
+
+        <h1 id="hot">What's Hot?</h1>
+
+        <div class="hot">
+            <div class="regular" id="batman">
+                <div class="attribute" >
+                    On Sale
+                </div>
+                <div class="footer">
+                    <h6 class="gameName">Batman: Arkham City</h6>
+                    <p class="price"><span class="old">$19.99</span> $12.99</p>
+                </div>
+            </div>
+
+            <div class="regular" id="nba">
+                <div class="attribute">
+                    
+                </div>
+                <div class="footer">
+                    <h6 class="gameName">NBA 2K20 Legendary Edition</h6>
+                    <p class="price">$59.99</p>
+                </div>
+            </div>
+
+            <div class="regular" id="ow">
+                <div class="attribute">
+                    On Sale
+                </div>
+                <div class="footer">
+                    <h6 class="gameName">Overwatch</h6>
+                    <p class="price"><span class="old">$49.99</span> $32.99</p>
+                </div>
+            </div>
+
+            <div class="regular" id="horizon">
+                <div class="attribute">
+                    On Sale
+                </div>
+                <div class="footer">
+                    <h6 class="gameName">Horizon Zero Dawn</h6>
+                    <p class="price"><span class="old">$19.99</span> $9.99</p>
+                </div>
+            </div>
+
+            <div class="regular" id="r6">
+                <div class="attribute">
+                    
+                </div>
+                <div class="footer">
+                    <h6 class="gameName">Tom Clancy's Rainbow Six Siege</h6>
+                    <p class="price">$24.99</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+    <script src="store.js"></script>
+</body>
+</html>

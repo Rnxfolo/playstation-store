@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom , rgb(8, 4, 73),rgb(0, 0, 255));
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*Grid Layout*/
+.wrapper{
+    display: grid;
+    grid-template-columns: 5% 15% 30% 40% 10%;
+    grid-template-rows: 10% 40% 40% 10%;
+    grid-gap: 2px;
+    height: 90vh;
+}
+
+#logo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.side{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.power{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.search{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.navigation{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.highlights{
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+
+#high{
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+
+.hot{
+    grid-column: 3/5;
+    grid-row: 3/5;
+}
+#hot{
+    grid-column: 3/5;
+    grid-row: 3/5;
+}
+
+/*Regular Styles*/
+/*Side Styles*/
+.side{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.player{
+    display: flex;
+    align-items: center;
+    background-color: rgb(104, 4, 175);
+    border-radius: 15px;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+.player h1{
+    font-size: xx-large;
+    margin-left: 15px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.list li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 20px 0;
+    
+    transition: all .5s ease-in-out;
+}
+.list li a:hover{
+    /*background-color: black;
+    text-decoration: underline;*/
+    background-color: rgb(0, 174, 255);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.power{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 50px;
+    transition: all .5s ease-in-out;
+}
+
+.power:hover{
+    background-color: black;
+    color: rgb(98, 0, 255);
+}
+
+.logout{
+    margin-left: 13px;
+}
+
+/*Navigation Styles*/
+.search{
+    display: flex;
+    align-items: center;
+}
+
+form{
+   display: flex;
+   align-items: center;
+}
+
+
+#searchQuery{
+    padding: 10px 50px;
+    margin-left: 20px;
+    background: transparent;
+    border: none;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+#searchQuery::placeholder{
+    color: white;
+    font-size: .9rem;
+    width: 100%;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+#nav li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+#nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all .5s ease-in-out;
+}
+
+#nav li a:hover{
+    background-color: black;
+    text-decoration: underline;
+}
+
+
+/*Highlights Styles*/
+.highlights{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+    align-items: center;
+    color: white;
+    margin-top: 3%;
+}
+
+.featured{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 30%;
+    border: 3px solid black;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+}
+
+.featured:hover{
+    transform: translate(-10px,-10px);
+    box-shadow: 10px 10px 50px rgb(2, 225, 255);
+    cursor: pointer;
+}
+
+.attribute{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: rgb(9, 72, 219);
+    width: fit-content;
+}
+
+.footer{
+    background-color: rgba(51, 51, 51, 0.548);
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.gameName, .price{
+    margin-left: 10px;
+}
+
+.gameName{
+    font-size: 1.3rem;
+}
+
+/*Whats Hot Styles*/
+.hot{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    flex-wrap: wrap;
+    overflow: scroll;
+    margin-top: 3%;
+}
+
+.hot::-webkit-scrollbar{
+    display: none;
+}
+
+.regular{
+    height: 60%;
+    width: 40%;
+    border: 3px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .5s ease-in-out;
+}
+
+.regular:hover{
+    transform: translate(-10px,-10px);
+    box-shadow: 10px 10px 20px rgb(151, 2, 251);
+    cursor: pointer;
+}
+
+.old{
+    text-decoration: line-through;
+    font-size: .8rem;
+}
+
+
+/*Game Images*/
+#apex{
+    background-image: url("/img/apex.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#mw{
+    background-image: url("/img/mw.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#gta5{
+    background-image: url("/img/gta5.jpg");
+    background-size: cover;
+    background-position: right;
+}
+
+#batman{
+    background-image: url("/img/arkhamcity.jpg");
+    background-size: cover;
+    background-position: left;
+}
+
+#nba{
+    background-image: url("/img/2k20.jpg");
+    background-size: cover;
+    background-position: right;
+}
+
+#nba .attribute,#r6 .attribute{
+    opacity: 0;
+}
+
+#ow{
+    background-image: url("/img/overwatch.jpg");
+    background-size: cover;
+    background-position: right;
+}
+
+#horizon{
+    background-image: url("/img/horizon.jpg");
+    background-size: cover;
+    background-position: left;
+}
+
+#r6{
+    background-image: url("/img/sixsiege.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#user{
+    width: 100%;
+    height: auto;
+    max-width: 30px;
+}
